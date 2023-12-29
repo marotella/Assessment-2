@@ -55,7 +55,10 @@ console.log(summedPrice)
 */
 
 //CODE HERE
-
+const calcFinalPrice = (cartTotal, couponValue, tax) => {
+    let finalPrice = cartTotal * (1+tax) - couponValue;
+    return finalPrice;
+}
 
 
 //////////////////PROBLEM 3////////////////////
@@ -81,6 +84,12 @@ console.log(summedPrice)
 /*
     TEXT ANSWER HERE
 
+    const object = {
+        name: string  - names would be a string field
+        price: number  - price would be a number so you can perform math on it
+        sale: Boolean - a true false to know if there is a sale on the item, this is either yes or no so it would be boolean.
+        tags: Array of strings  - to allow for searching for items based on categories
+    }
 */
 
 /*
@@ -89,3 +98,10 @@ console.log(summedPrice)
 */
 
 //CODE HERE
+
+const customObject = {
+    name: "Ornament",
+    price: 9,
+    sale: true,
+    tags: ["holiday", "home", "Christmas", "decor"]
+}
