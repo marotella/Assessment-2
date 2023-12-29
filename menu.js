@@ -103,7 +103,7 @@ const foodArr =[
     price: 7,
     category: "appetizer",
     popularity: 4,
-    rating: 4,
+    rating: 4.6,
     tags: ["side", "marinara", "garlic"]},
     {name: "Broccoli Rabe",
     price: 9,
@@ -187,6 +187,12 @@ console.log(filteredFood)
 
 //CODE HERE
 
+const filterByProperty = (property, number) => {
+    filteredArr = foodArr.filter((food) => food[property] > number)
+    return filteredArr
+}
+
+console.log(filterByProperty("rating", 4.4))
 
 /*
     Invoke the `filterByProperty` function, passing
