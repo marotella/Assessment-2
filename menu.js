@@ -192,7 +192,6 @@ const filterByProperty = (property, number) => {
     return filteredArr
 }
 
-console.log(filterByProperty("rating", 4.4))
 
 /*
     Invoke the `filterByProperty` function, passing
@@ -202,3 +201,5 @@ console.log(filterByProperty("rating", 4.4))
 */
 
 //CODE HERE
+
+console.log(filterByProperty("rating", 4.4));
