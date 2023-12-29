@@ -31,7 +31,14 @@
 */
 
 //CODE HERE
-
+const pizza = {
+    name: "Supreme",
+    price: 15,
+    category: "entree",
+    popularity: 3,
+    rating: 4.5,
+    tags: ["pepperoni", "mushroom", "peppers"]
+}
 
 
 //////////////////PROBLEM 2////////////////////
