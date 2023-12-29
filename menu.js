@@ -98,7 +98,32 @@ console.log(category)
 
 //CODE HERE
 
-
+const foodArr =[
+    {name: "Garlic Knots",
+    price: 7,
+    category: "appetizer",
+    popularity: 4,
+    rating: 4,
+    tags: ["side", "marinara", "garlic"]},
+    {name: "Broccoli Rabe",
+    price: 9,
+    category: "side",
+    popularity: 5,
+    rating: 4,
+    tags: ["side", "vegetarian", "gluten-free"]},
+    {name: "Chicken Parm",
+    price: 18,
+    category: "entree",
+    popularity: 2,
+    rating: 4.9,
+    tags: ["marinara", "cheese", "chicken"]},
+    {name: "Tiramisu",
+    price: 8,
+    category: "dessert",
+    popularity: 6,
+    rating: 4.2,
+    tags: ["espresso", "chocolate", "cream", "vegetarian"]}
+]
 
 //////////////////PROBLEM 4////////////////////
 /*
@@ -118,9 +143,13 @@ console.log(category)
 
 //CODE HERE
 
-// const filteredFood = foodArr.filter(/* CALLBACK HERE */)
+const vegetarianSearch = (obj) => {
+   return obj.tags.includes("vegetarian")
+}
 
+const filteredFood = foodArr.filter(vegetarianSearch)
 
+console.log(filteredFood)
 
 //////////////////PROBLEM 5////////////////////
 /*
