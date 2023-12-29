@@ -81,7 +81,18 @@ console.log(canWeDeliver(85204));
 
 // CODE HERE
 
+const canWeDeliverTwo = (zipCode) => {
+    for (zip of deliveryAreaZipCodes){
+        if (zip === zipCode){
+            return "You are in our delivery zone!"
+        } 
+    }
+    {
+        return "Sorry, we can't deliver to that address."
+        }}
 
+console.log(canWeDeliverTwo(15367));
+console.log(canWeDeliverTwo(85203));
 //////////////////PROBLEM 3////////////////////
 /* 
     Below is an array of objects that have some
@@ -119,8 +130,8 @@ const deals = [
 */
 
 //CODE HERE
-
-
+deals[0].title = deals[0].title.replace("15", "10")
+console.log(deals)
 
 /*
     The restaurant is going to continue its
