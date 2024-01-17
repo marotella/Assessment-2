@@ -26,7 +26,7 @@ class Employee {
         this.name = name,
         this.shifts = shifts
     }
-    getSchedule(){console.log(`${this.name} works ${this.shift}.`)}
+    getSchedule(){console.log(`${this.name} works ${this.shifts}.`)}
 }
 
 /*
@@ -49,6 +49,7 @@ console.log(empOne)
 
 //CODE HERE
 
+empOne.getSchedule()
 
 
 
