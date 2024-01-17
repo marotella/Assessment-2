@@ -78,7 +78,12 @@ empOne.getSchedule()
 
 //CODE HERE
 
-
+class Manager extends Employee{
+    constructor(name, shifts, employees){
+        super(name, shifts)
+        this.employees = employees
+    }
+}
 
 /*
     Create a new instance of your class.
