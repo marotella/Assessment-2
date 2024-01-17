@@ -21,7 +21,13 @@
 
 //CODE HERE
 
-
+class Employee {
+    constructor(name, shifts){
+        this.name = name,
+        this.shift = shift
+    }
+    getSchedule(){console.log(`${this.name} works ${this.shift}.`)}
+}
 
 /*
     Create a new instance of your class.
