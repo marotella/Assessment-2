@@ -83,6 +83,9 @@ class Manager extends Employee{
         super(name, shifts)
         this.employees = employees
     }
+    getEmployees(){console.log(`${this.name} manages ${this.employees.join(", "
+    )}.`)}
+    addEmployee(emp){this.employees.push(emp)}
 }
 
 /*
@@ -97,7 +100,7 @@ class Manager extends Employee{
 */
 
 //CODE HERE
-
+ const manager = new Manager ("Winston", "weekday afternoons", ["Cece", "Schmidt"])
 
 /*
     Call the `getEmployees` method on the
@@ -105,6 +108,7 @@ class Manager extends Employee{
 */
 
 //CODE HERE
+manager.getEmployees()
 
 /*
     Call the `addEmployee` method on the 
@@ -113,7 +117,7 @@ class Manager extends Employee{
 */
 
 //CODE HERE 
-
+manager.addEmployee("Coach")
 /*
     Call the `getEmployees` method on the
     `manager` varible again to confirm 
@@ -121,3 +125,4 @@ class Manager extends Employee{
 */
 
 //CODE HERE
+manager.getEmployees()
