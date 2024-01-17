@@ -24,7 +24,7 @@
 class Employee {
     constructor(name, shifts){
         this.name = name,
-        this.shift = shift
+        this.shifts = shifts
     }
     getSchedule(){console.log(`${this.name} works ${this.shift}.`)}
 }
@@ -40,7 +40,8 @@ class Employee {
 */
 
 //CODE HERE
-
+const empOne = new Employee("Jess", "weekday morning")
+console.log(empOne)
 /*
     Call the `getSchedule` method on the
     `empOne` instance.
